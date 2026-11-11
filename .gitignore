@@ -130,3 +130,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Entornos virtuales
+.venv/
+.venv-1/
+venv/
+
+# Archivos temporales del laboratorio
+input.txt
