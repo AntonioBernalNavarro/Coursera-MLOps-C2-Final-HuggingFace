@@ -8,6 +8,7 @@ model = pipeline(
     revision="a4f8f3e",
 )
 
+
 def predict(prompt):
     summary = model(prompt)[0]["summary_text"]
     return summary
