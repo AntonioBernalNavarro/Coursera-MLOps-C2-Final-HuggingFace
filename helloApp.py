@@ -20,10 +20,12 @@ with gr.Blocks() as demo:
     boton = gr.Button("Sumar")
     salida = gr.Textbox(label="Resultado")
 
+    # Gradio defines Button.click dynamically; Pylint cannot infer it.
+    # pylint: disable-next=no-member
     boton.click(
         fn=sumar,
         inputs=[num1, num2],
         outputs=salida,
-    )  # pylint: disable=no-member
+    )
 
 demo.launch()
