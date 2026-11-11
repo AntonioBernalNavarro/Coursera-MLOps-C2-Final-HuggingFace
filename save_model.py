@@ -1,6 +1,6 @@
 """
 After running zip it to save
-zip -r summarizeApp.zip summarizeApp 
+zip -r summarizeApp.zip summarizeApp
 """
 
 from transformers import pipeline
