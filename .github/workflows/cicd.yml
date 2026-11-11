@@ -11,10 +11,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5   # Actualizado a v5 (Node 24)
       
       - name: Set up Python 3.12
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6   # Actualizado a v6 (Node 24)
         with:
           python-version: '3.12'
           
@@ -30,7 +30,5 @@ jobs:
       - name: format
         run: make format
         
-      # El paso de deploy se ha comentado o reemplazado porque no hay un destino de despliegue en este laboratorio.
-      # Si tienes un Makefile con un comando 'deploy' funcional, puedes descomentar la siguiente línea.
       - name: deploy
         run: echo "Skipping deploy step for this laboratory assignment."
